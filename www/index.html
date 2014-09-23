@@ -33,6 +33,8 @@
         <div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
+                <a href="#">top</a>
+                <a href="tour">tour</a>
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
@@ -40,9 +42,9 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            require(["jquery", "application"], function($, Application){
+            require(["jquery", "application", "routes"], function($, Application, routes){
                 $(document).on("deviceready", function(){
-                    var app = new Application();
+                    var app = new Application({routes: routes});
                 })
             });
         </script>
