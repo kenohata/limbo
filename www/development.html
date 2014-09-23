@@ -40,9 +40,9 @@
         <script type="text/javascript" src="bower_components/requirejs/require.js" data-main="js/config"></script>
         <script type="text/javascript">
             require(["config"], function(){
-                require(["jquery", "application"], function($, Application){
+                require(["jquery", "application", "routes"], function($, Application, routes){
                     $(function(){
-                        var app = new Application();
+                        var app = new Application({routes: routes});
                     });
                 });
             });
