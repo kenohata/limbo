@@ -11,5 +11,13 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "jquery": "~2.1.1",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.2",
+    "chaplin": "~1.0.1",
+    "bootstrap": "~3.2.0"
+  }
 }
